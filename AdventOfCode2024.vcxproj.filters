@@ -19,6 +19,9 @@
     <Filter Include="Source Files\Additional">
       <UniqueIdentifier>{e4e823f2-1c9f-4a36-85ce-10ed4fd5c964}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Example Day">
+      <UniqueIdentifier>{d0a96964-e964-482c-a2ca-698df39a12cf}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AdventOfCode2024.cpp">
@@ -29,6 +32,15 @@
     </ClCompile>
     <ClCompile Include="Util.cpp">
       <Filter>Source Files\Additional</Filter>
+    </ClCompile>
+    <ClCompile Include="Day2.cpp">
+      <Filter>Source Files\Day 1-10</Filter>
+    </ClCompile>
+    <ClCompile Include="ExampleDay.cpp">
+      <Filter>Source Files\Example Day</Filter>
+    </ClCompile>
+    <ClCompile Include="Day3.cpp">
+      <Filter>Source Files\Day 1-10</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -41,5 +53,22 @@
     <ClInclude Include="BaseDay.h">
       <Filter>Source Files\Additional</Filter>
     </ClInclude>
+    <ClInclude Include="Day2.h">
+      <Filter>Source Files\Day 1-10</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExampleDay.h">
+      <Filter>Source Files\Example Day</Filter>
+    </ClInclude>
+    <ClInclude Include="Day3.h">
+      <Filter>Source Files\Day 1-10</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AdventOfCode2024.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

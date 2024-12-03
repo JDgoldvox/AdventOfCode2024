@@ -2,7 +2,7 @@
 
 string Day1::Run() {
 	ifstream inStream;
-	inStream.open("input/inputDay1.txt");
+	inStream.open(inputPath);
 
 	if (!inStream.is_open()) {
 		cout << "Error - File did not open\n";
