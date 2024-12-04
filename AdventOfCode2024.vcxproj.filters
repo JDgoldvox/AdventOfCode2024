@@ -13,14 +13,14 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\Day 1-10">
-      <UniqueIdentifier>{7295d894-32c9-485b-b926-400831442d0f}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Additional">
       <UniqueIdentifier>{e4e823f2-1c9f-4a36-85ce-10ed4fd5c964}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\Example Day">
       <UniqueIdentifier>{d0a96964-e964-482c-a2ca-698df39a12cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Day 1-5">
+      <UniqueIdentifier>{7295d894-32c9-485b-b926-400831442d0f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -28,24 +28,27 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Day1.cpp">
-      <Filter>Source Files\Day 1-10</Filter>
+      <Filter>Source Files\Day 1-5</Filter>
     </ClCompile>
     <ClCompile Include="Util.cpp">
       <Filter>Source Files\Additional</Filter>
     </ClCompile>
     <ClCompile Include="Day2.cpp">
-      <Filter>Source Files\Day 1-10</Filter>
+      <Filter>Source Files\Day 1-5</Filter>
     </ClCompile>
     <ClCompile Include="ExampleDay.cpp">
       <Filter>Source Files\Example Day</Filter>
     </ClCompile>
     <ClCompile Include="Day3.cpp">
-      <Filter>Source Files\Day 1-10</Filter>
+      <Filter>Source Files\Day 1-5</Filter>
+    </ClCompile>
+    <ClCompile Include="Day4.cpp">
+      <Filter>Source Files\Day 1-5</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Day1.h">
-      <Filter>Source Files\Day 1-10</Filter>
+      <Filter>Source Files\Day 1-5</Filter>
     </ClInclude>
     <ClInclude Include="Util.h">
       <Filter>Source Files\Additional</Filter>
@@ -54,7 +57,7 @@
       <Filter>Source Files\Additional</Filter>
     </ClInclude>
     <ClInclude Include="Day2.h">
-      <Filter>Source Files\Day 1-10</Filter>
+      <Filter>Source Files\Day 1-5</Filter>
     </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>Header Files</Filter>
@@ -63,7 +66,10 @@
       <Filter>Source Files\Example Day</Filter>
     </ClInclude>
     <ClInclude Include="Day3.h">
-      <Filter>Source Files\Day 1-10</Filter>
+      <Filter>Source Files\Day 1-5</Filter>
+    </ClInclude>
+    <ClInclude Include="Day4.h">
+      <Filter>Source Files\Day 1-5</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
