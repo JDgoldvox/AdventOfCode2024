@@ -16,6 +16,7 @@ private:
 	string inputPath = "input/inputDay3.txt";
 
 	vector<int> FindPossibleMuls(const string& line);
+	vector<int> FindPossibleMulsWithInstructions(const string& line, bool& instructionEnabled);
 	void CheckValidMulsAndSum(const vector<int>& possibleMuls, int& sum, const string& line);
 	bool IsNumber(const char& character);
 };
