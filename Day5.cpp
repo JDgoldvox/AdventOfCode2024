@@ -1,6 +1,6 @@
-#include "ExampleDay.h"
+#include "Day5.h"
 
-string ExampleDay::Run() {
+string Day5::Run() {
 	ifstream inStream;
 	inStream.open(inputPath);
 
@@ -14,10 +14,10 @@ string ExampleDay::Run() {
 	return answer;
 }
 
-string ExampleDay::Part1(ifstream& inStream) {
+string Day5::Part1(ifstream& inStream) {
 	return string();
 }
 
-string ExampleDay::Part2(ifstream& inStream) {
+string Day5::Part2(ifstream& inStream) {
 	return string();
 }
