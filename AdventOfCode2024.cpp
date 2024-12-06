@@ -5,10 +5,12 @@
 #include "Day4.h"
 #include "Day5.h"
 
+#include "Day6.h"
+
 using namespace std;
 
 int main()
 {
-    Day5 day;
+    Day6 day;
     cout << day.Run();
 }
