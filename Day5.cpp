@@ -180,25 +180,11 @@ vector<int> Day5::ReturnCorrectlyOrderedPages(const string& line)
 			}
 
 			//insert score into table
-			if (orderScore.find(currentScore) != orderScore.end()) //if exists
-			{
-				orderScore[currentScore].insert(currentNum);
-			}
-			else 
-			{
-				orderScore.emplace(currentScore, set<int>{currentNum});
-			}
+			orderScore[currentScore].insert(currentNum);
 		}
 		else {
 			//insert score into table
-			if (orderScore.find(currentScore) != orderScore.end()) //if exists
-			{
-				orderScore[0].insert(currentNum);
-			}
-			else
-			{
-				orderScore.emplace(0, set<int>{currentNum});
-			}
+			orderScore[0].insert(currentNum);
 		}
 	}
 
@@ -311,30 +297,15 @@ vector<int> Day5::ReturnIncorrectlyOrderedPages(const string& line)
 			}
 
 			//insert score into table
-			if (orderScore.find(currentScore) != orderScore.end()) //if exists
-			{
-				orderScore[currentScore].insert(currentNum);
-			}
-			else
-			{
-				orderScore.emplace(currentScore, set<int>{currentNum});
-			}
+			orderScore[currentScore].insert(currentNum);
 		}
 		else {
 			//insert score into table
-			if (orderScore.find(currentScore) != orderScore.end()) //if exists
-			{
-				orderScore[0].insert(currentNum);
-			}
-			else
-			{
-				orderScore.emplace(0, set<int>{currentNum});
-			}
+			orderScore[0].insert(currentNum);
 		}
 	}
 
 	//combine all orders together
-
 	vector<int> correctOrder;
 
 	for (const auto& [score, pageNumbers] : orderScore)

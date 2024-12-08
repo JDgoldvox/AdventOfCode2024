@@ -71,9 +71,6 @@
     <ClInclude Include="Day2.h">
       <Filter>Source Files\Days\Day 1-5</Filter>
     </ClInclude>
-    <ClInclude Include="resource.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="ExampleDay.h">
       <Filter>Source Files\Example Day</Filter>
     </ClInclude>
@@ -88,6 +85,9 @@
     </ClInclude>
     <ClInclude Include="Day6.h">
       <Filter>Source Files\Days\Day 6- 10</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
