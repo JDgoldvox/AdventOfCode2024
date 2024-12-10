@@ -4,13 +4,15 @@
 #include "Day3.h"
 #include "Day4.h"
 #include "Day5.h"
-
 #include "Day6.h"
-
+#include "Day7.h"
+ 
 using namespace std;
 
 int main()
 {
-    Day6 day;
+    Day7 day;
     cout << day.Run();
+
+    return 0;
 }

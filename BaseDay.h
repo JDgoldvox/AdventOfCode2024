@@ -1,5 +1,5 @@
 #pragma once
-#include "Util.h";
+#include "Util.h"
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -15,6 +15,7 @@
 #include <set>
 #include <unordered_set>
 #include <deque>
+#include <stdint.h>
 
 using namespace std;
 
