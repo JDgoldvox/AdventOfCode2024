@@ -68,14 +68,14 @@ bool Day7::IsValidTestValue(const uint64_t& testValue, const vector<uint64_t>& i
 /// <param name="index"></param>
 /// <param name="sum"></param>
 /// <returns></returns>
-bool Day7::Calculate(const uint64_t& testValue, const vector<uint64_t>& inputNumbers, const int& index, const uint64_t& sum)
+bool Day7::Calculate(const uint64_t& testValue, vector<uint64_t> inputNumbers, const int& index, const uint64_t& sum)
 {
 	//When we reach the end, check if we match test value
 	if (index == inputNumbers.size())
 	{
 		return sum == testValue;
 	}
-	else if (sum > testValue)
+	else if (sum > testValue) //no need to keep searching if we have summed over the test Value
 	{
 		return false;
 	}
@@ -85,9 +85,21 @@ bool Day7::Calculate(const uint64_t& testValue, const vector<uint64_t>& inputNum
 		return true;
 	}
 
-	//right branch *
+	//middle branch *
 	if(Calculate(testValue, inputNumbers, index + 1, sum * inputNumbers[index])){
 		return true;
+	}
+	
+	//concatinate branch ||
+	if (part2)
+	{
+		//combine this and previous numbers
+		string concat = to_string(sum) + to_string(inputNumbers[index]);
+
+		if (Calculate(testValue, inputNumbers, index + 1, stoull(concat)))
+		{
+			return true;
+		}
 	}
 
 	return false;

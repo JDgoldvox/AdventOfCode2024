@@ -11,6 +11,8 @@ private:
 	string inputPath = "input/inputDay7.txt";
 
 	bool IsValidTestValue(const uint64_t& testValue, const vector<uint64_t>& inputNumbers);
-	bool Calculate(const uint64_t& testValue, const vector<uint64_t>& inputNumbers, const int& index, const uint64_t& sum);
+	bool Calculate(const uint64_t& testValue, vector<uint64_t> inputNumbers, const int& index, const uint64_t& sum);
+
+	bool part2 = true;
 	
 };
